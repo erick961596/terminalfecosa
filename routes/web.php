@@ -18,6 +18,11 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/ruta/{slug}', [RutaController::class, 'show'])->name('ruta.show');
 Route::get('/api/rutas/search', [RutaController::class, 'search'])->name('api.rutas.search');
 
+
+use App\Http\Controllers\Public\ColaboracionController;
+Route::post('/colabora', [ColaboracionController::class, 'store'])->name('colabora.store');
+
+
 /*
 |--------------------------------------------------------------------------
 | ADMIN AUTH
