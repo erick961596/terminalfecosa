@@ -25,7 +25,7 @@
         onmouseover="this.style.transform='translateY(-3px) scale(1.03)';this.style.boxShadow='0 10px 32px rgba(204,30,55,.55)'"
         onmouseout="this.style.transform='';this.style.boxShadow='0 6px 24px rgba(204,30,55,.45)'">
     <i class="fa-solid fa-bus" style="font-size:1rem;"></i>
-    <span class="d-none d-sm-inline">¿Conocés los horarios?</span>
+    <span class="d-none d-sm-inline">¿Conocés algún horario que no está?</span>
     <span class="d-inline d-sm-none">Colaborar</span>
 </button>
 
@@ -194,7 +194,7 @@
                        color:#262626;margin:0 0 .5rem;">¡Muchas gracias!</h3>
             <p style="color:#666;font-size:.9rem;margin:0 0 1.5rem;line-height:1.6;">
                 Tu colaboración fue enviada con éxito.<br>
-                El equipo de Terminal FECOSA revisará la información y la publicará si está correcta.
+                Revisaremos la información y la publicaremos si está correcta.
             </p>
             <button onclick="cerrarColabora()"
                     style="background:#262626;color:#fff;border:none;border-radius:10px;
