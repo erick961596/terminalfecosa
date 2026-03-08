@@ -241,6 +241,8 @@ function abrirColabora() {
         event_label:    'Boton flotante colaborar',
     });
 
+    console.log('Colabora modal opened');
+
 
 }
 
