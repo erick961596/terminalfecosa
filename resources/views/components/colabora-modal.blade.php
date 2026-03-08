@@ -233,6 +233,15 @@ function abrirColabora() {
     document.getElementById('colaboraErrors').style.display = 'none';
     document.getElementById('colaboraForm').reset();
     quitarArchivo();
+
+
+    // ── Google Analytics event ──
+    gtag('event', 'open_colabora_modal', {
+        event_category: 'Colaboracion',
+        event_label:    'Boton flotante colaborar',
+    });
+
+
 }
 
 function cerrarColabora() {
@@ -300,6 +309,17 @@ function enviarColabora(e) {
         document.getElementById('colaboraLoading').style.display = 'none';
         if (data.success) {
             document.getElementById('colaboraSuccess').style.display = 'block';
+
+            if (data.success) {
+                // ── GA: envío exitoso ──
+                gtag('event', 'submit_colaboracion', {
+                    event_category: 'Colaboracion',
+                    event_label:    'Formulario enviado con éxito',
+                });
+                document.getElementById('colaboraSuccess').style.display = 'block';
+            }
+
+
         } else {
             document.getElementById('colaboraFormWrapper').style.display = 'block';
             mostrarErrores(data.errors || {general: [data.message || 'Error al enviar.']});
