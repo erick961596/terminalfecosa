@@ -254,7 +254,7 @@
         /* ── HERO ── */
         .hero-section {
             background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 60%, #2a0a10 100%);
-            padding: 3.5rem 1.5rem 2.5rem;
+            padding: 3.5rem 1.5rem 6.5rem;
             position: relative;
             overflow: hidden;
         }
