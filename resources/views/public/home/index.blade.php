@@ -13,7 +13,7 @@
                 <div class="hero-tagline mb-2">
                     HORARIOS DE <span class="red">BUSES</span><br>TERMINAL FECOSA
                 </div>
-                <p class="hero-sub mb-4">Consulta las salidas de todas las rutas del Cantón de Alajuela · {{ $rutas->count() }} rutas disponibles</p>
+                <p class="hero-sub mb-4">Esta página no está vinculada con la Municipalidad de Alajuela ni con Terminal Fecosa, es un proyecto comunitario.<br>Consulta las salidas de todas las rutas del Cantón de Alajuela · {{ $rutas->count() }} rutas disponibles</p>
             </div>
         </div>
 
