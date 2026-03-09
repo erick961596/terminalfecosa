@@ -91,6 +91,17 @@
 
                 <div style="margin-bottom:1rem;">
                     <label style="display:block;font-size:.82rem;font-weight:700;color:#444;margin-bottom:5px;">
+                        Tu correo <span style="color:#999;font-weight:400;">(opcional)</span>
+                    </label>
+                    <input type="email" name="correo" maxlength="100" placeholder="Ej: maria@example.com"
+                           style="width:100%;border:1.5px solid #e0e0e0;border-radius:9px;padding:.6rem .9rem;
+                                  font-family:'Nunito',sans-serif;font-size:.9rem;color:#262626;
+                                  transition:border-color .2s;outline:none;"
+                           onfocus="this.style.borderColor='#cc1e37'" onblur="this.style.borderColor='#e0e0e0'">
+                </div>
+
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block;font-size:.82rem;font-weight:700;color:#444;margin-bottom:5px;">
                         ¿De qué ruta conocés los horarios? <span style="color:#cc1e37;">*</span>
                     </label>
                     <input type="text" name="ruta" required maxlength="150"

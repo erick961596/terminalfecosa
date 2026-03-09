@@ -13,6 +13,7 @@ class ColaboracionController extends Controller
     {
         $data = $request->validate([
             'nombre'     => 'nullable|string|max:100',
+            'correo'     => 'nullable|email|max:100',
             'ruta'       => 'required|string|max:150',
             'horarios'   => 'required|string|max:2000',
             'comentario' => 'nullable|string|max:1000',

@@ -61,6 +61,15 @@
                 <td style="padding:12px 16px;font-size:14px;color:#262626;font-weight:600;">{{ $datos['nombre'] }}</td>
               </tr>
               @endif
+
+              @if(!empty($datos['correo']))
+              <tr style="border-bottom:1px solid #f0f0f0;">
+                <td style="padding:12px 16px;background:#fafafa;font-size:12px;font-weight:700;color:#999;text-transform:uppercase;width:35%;letter-spacing:.5px;">Correo</td>
+                <td style="padding:12px 16px;font-size:14px;color:#262626;font-weight:600;">{{ $datos['correo'] }}</td>
+              </tr>
+              @endif
+
+
               <tr style="border-bottom:1px solid #f0f0f0;">
                 <td style="padding:12px 16px;background:#fafafa;font-size:12px;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:.5px;">Horarios</td>
                 <td style="padding:12px 16px;font-size:14px;color:#262626;line-height:1.7;white-space:pre-line;">{{ $datos['horarios'] }}</td>
