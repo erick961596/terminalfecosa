@@ -89,18 +89,18 @@
 <!-- SUPERCANCHA BANNER AD -->
 <div class="container pb-4 pt-1">
     <div class="supercancha-banner">
-        <div class="sc-badge">NUEVO PROYECTO</div>
+        <div class="sc-badge">Alquiler de canchas deportivas</div>
         <div class="sc-content">
             <div class="sc-left">
                 <div class="sc-icon">
                     <i class="fa-solid fa-futbol"></i>
                 </div>
                 <div class="sc-text">
-                    <div class="sc-title">SuperCancha <span class="sc-cr">Alajuela</span></div>
-                    <div class="sc-desc">Encontrá y reservá canchas deportivas cerca de vos. Fútbol, básquet, tenis y más.</div>
+                    <div class="sc-title">SuperCancha</div>
+                    <div class="sc-desc">Encontrá y reservá canchas deportivas cerca de vos. Fútbol, Pádel,  básquet, tenis y más.</div>
                 </div>
             </div>
-            <a href="#" class="sc-btn">
+            <a href="https://supercancha.com/?utm_source=terminal_fecosa&utm_medium=cpc" class="sc-btn">
                 Conocer <i class="fa-solid fa-arrow-right ms-1" style="font-size:.75rem;"></i>
             </a>
         </div>
