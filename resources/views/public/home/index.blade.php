@@ -42,7 +42,7 @@
                     <div class="sc-desc">Encontrá y reservá canchas deportivas cerca de vos. Fútbol, Pádel,  básquet, tenis y más.</div>
                 </div>
             </div>
-            <a href="https://supercancha.com/?utm_source=terminal_fecosa&utm_medium=cpc" class="sc-btn">
+            <a href="https://supercancha.com/?utm_source=terminal_fecosa&utm_medium=cpc" class="sc-btn" id="btn_super_cancha">
                 Conocer <i class="fa-solid fa-arrow-right ms-1" style="font-size:.75rem;"></i>
             </a>
         </div>
@@ -297,5 +297,21 @@ document.querySelectorAll('.filter-pill').forEach(btn => {
         this.style.borderColor = '#cc1e37';
     });
 });
+
+
+
+
+
+//add event analytics #btn_super_cancha
+
+document.getElementById('btn_super_cancha').addEventListener('click', function() {
+    if (window.gtag) {
+        gtag('event', 'click', {
+            'event_category': 'SuperCancha Banner',
+            'event_label': 'Click en botón Conocer SuperCancha'
+        });
+    }
+});
+
 </script>
 @endpush
