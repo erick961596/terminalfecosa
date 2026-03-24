@@ -46,7 +46,7 @@
                 Conocer <i class="fa-solid fa-arrow-right ms-1" style="font-size:.75rem;"></i>
             </a>
         </div>
-        <div class="sc-ad-label">Proyecto comunitario</div>
+        <div class="sc-ad-label">Reservá, jugá y disfrutá</div>
     </div>
 </div>
 
