@@ -86,6 +86,131 @@
     </div>
 </div>
 
+<!-- SUPERCANCHA BANNER AD -->
+<div class="container pb-4 pt-1">
+    <div class="supercancha-banner">
+        <div class="sc-badge">NUEVO PROYECTO</div>
+        <div class="sc-content">
+            <div class="sc-left">
+                <div class="sc-icon">
+                    <i class="fa-solid fa-futbol"></i>
+                </div>
+                <div class="sc-text">
+                    <div class="sc-title">SuperCancha <span class="sc-cr">Alajuela</span></div>
+                    <div class="sc-desc">Encontrá y reservá canchas deportivas cerca de vos. Fútbol, básquet, tenis y más.</div>
+                </div>
+            </div>
+            <a href="#" class="sc-btn">
+                Conocer <i class="fa-solid fa-arrow-right ms-1" style="font-size:.75rem;"></i>
+            </a>
+        </div>
+        <div class="sc-ad-label">Proyecto comunitario</div>
+    </div>
+</div>
+
+<style>
+.supercancha-banner {
+    position: relative;
+    background: #fff;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 12px;
+    padding: .75rem 1rem .75rem 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.supercancha-banner::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: #cc1e37;
+    border-radius: 12px 0 0 12px;
+}
+.sc-badge {
+    display: inline-block;
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    color: #cc1e37;
+    background: rgba(204,30,55,.08);
+    border-radius: 50px;
+    padding: .15rem .55rem;
+    margin-bottom: .45rem;
+    text-transform: uppercase;
+}
+.sc-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.sc-left {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    flex: 1;
+    min-width: 0;
+}
+.sc-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #cc1e37 0%, #a01526 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.sc-title {
+    font-weight: 800;
+    font-size: .95rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+.sc-cr { color: #cc1e37; }
+.sc-desc {
+    font-size: .75rem;
+    color: #777;
+    margin-top: .1rem;
+    line-height: 1.35;
+}
+.sc-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #cc1e37;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: .78rem;
+    padding: .45rem 1rem;
+    border-radius: 50px;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background .18s, transform .15s;
+    flex-shrink: 0;
+}
+.sc-btn:hover {
+    background: #a01526;
+    transform: translateY(-1px);
+}
+.sc-ad-label {
+    position: absolute;
+    top: .4rem;
+    right: .6rem;
+    font-size: .55rem;
+    color: #bbb;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+@media (max-width: 480px) {
+    .sc-desc { display: none; }
+    .sc-title { font-size: .85rem; }
+}
+</style>
+
 <!-- FEATURES SECTION -->
 @if($features->count())
 <section class="features-section py-5 mt-2" id="features">
@@ -97,7 +222,7 @@
             <p style="color:rgba(255,255,255,.5);font-size:.9rem;">¡Como Alajuela se merece!</p>
         </div>
 
-        <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <div class="d-flex flex-wrap gap-2 justify-content: center">
             @foreach($features as $feature)
             <div class="feature-pill">
                 <i class="{{ $feature->icono }}"></i>
